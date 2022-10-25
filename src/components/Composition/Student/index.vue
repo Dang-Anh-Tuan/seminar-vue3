@@ -1,26 +1,26 @@
 <template>
   <div>
-    <list-component :data="students">
-
-    </list-component>
+    <from-create> </from-create>
+    <!-- <list-component :data="students"> </list-component> -->
   </div>
 </template>
 <script>
-import ListComponent from '../ListComponent.vue';
+// import ListComponent from "../ListComponent.vue";
+import FromCreate from "./FromCreate.vue";
+
 export default {
-  components: { ListComponent },
+  components: {  FromCreate },
   name: "StudentComponent",
 
   data() {
     return {
-      students : [
+      students: [
         {
-          name : "Tuan",
-          age : 18
-        }
-      ]
-    }
+          name: "Tuan",
+          age: 18,
+        },
+      ],
+    };
   },
- 
 };
 </script>
